@@ -51,6 +51,11 @@ h4 {
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.25px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    margin-bottom: 10px;
 }
 
 img {
@@ -202,7 +207,7 @@ html {
 
 .menu .copyright-text {
     position: relative;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .menu .copyright-text p {
@@ -211,7 +216,7 @@ html {
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 30px;
+    padding-top: 14px;
     font-size: 13px;
 }
 
@@ -379,6 +384,16 @@ button:hover {
     color: #fff;
 }
 
+/* About Me Image */
+
+.main-image img {
+    border-radius: 5px;
+    max-height: 65vh;
+    max-width: 65vh;
+    height: auto;
+    width: auto\9; /* ie8 */
+    filter: brightness(95%);
+}
 
 /* Left & Right Post */
 
@@ -409,49 +424,49 @@ button:hover {
 }
 
 
-/* Services */
+/* Skills */
 
-.my-services .col-md-6 {
+.my-skills .col-md-6 {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.service-item {
+.skill-item {
     margin-bottom: 10px;
     padding: 50px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: all 0.5s;
 }
 
-.service-item h4 {
+.skill-item h4 {
     transition: all 0.5s;
 }
 
-.service-item p {
+.skill-item p {
     transition: all 0.5s;
 }
 
-.service-item li {
+.skill-item li {
     transition: all 0.5s;
 }
 
-.service-item:hover {
+.skill-item:hover {
     background-color: rgba(250, 250, 250, 1);
 }
 
-.service-item:hover h4 {
+.skill-item:hover h4 {
     color: #1e1e1e;
 }
 
-.service-item:hover p {
+.skill-item:hover p {
     color: #4a4a4a;
 }
 
-.service-item:hover li {
+.skill-item:hover li {
     color: #4a4a4a;
 }
 
-.service-item .service-icon {
+.skill-item .skill-icon {
     width: 70px;
     height: 70px;
     display: inline-block;
@@ -461,42 +476,42 @@ button:hover {
     transition: all 0.5s;
 }
 
-.service-item .first-service-icon {
+.skill-item .first-skill-icon {
     background-image: url(../images/first-white-icon.png);
 }
 
-.service-item:hover .first-service-icon {
+.skill-item:hover .first-skill-icon {
     background-image: url(../images/first-main-icon.png);
 }
 
-.service-item .second-service-icon {
+.skill-item .second-skill-icon {
     background-image: url(../images/second-white-icon.png);
 }
 
-.service-item:hover .second-service-icon {
+.skill-item:hover .second-skill-icon {
     background-image: url(../images/second-main-icon.png);
 }
 
-.service-item .third-service-icon {
+.skill-item .third-skill-icon {
     background-image: url(../images/third-white-icon.png);
 }
 
-.service-item:hover .third-service-icon {
+.skill-item:hover .third-skill-icon {
     background-image: url(../images/third-main-icon.png);
 }
 
-.service-item .fourth-service-icon {
+.skill-item .fourth-skill-icon {
     background-image: url(../images/fourth-white-icon.png);
 }
 
-.service-item:hover .fourth-service-icon {
+.skill-item:hover .fourth-skill-icon {
     background-image: url(../images/fourth-main-icon.png);
 }
 
 
-/* My Work */
+/* Resume */
 
-section.my-work .section-heading {
+section.resume .section-heading {
     text-align: center;
     padding: 80px 45px 50px 45px;
 }
