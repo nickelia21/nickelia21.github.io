@@ -400,14 +400,9 @@ https://templatemo.com/tm-531-reflux
                   </div>
                   <div class="col-md-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="button">
-                        Send Message
-                      </button>
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+                      <button type="submit" id="form-submit" class="button" data-callback='onSubmit'
+                        data-sitekey="6LekGJMaAAAAAIrlstSFXTSLggMHpet03DkTandA" data-action='submit'>
+                        Send Message</button>
                     </fieldset>
                   </div>
                 </div>
@@ -479,16 +474,11 @@ https://templatemo.com/tm-531-reflux
   </script>
 
   <!-- Add reCAPTCHA Library -->
-  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script>
-    grecaptcha.ready(function () {
-      grecaptcha.execute('6LekGJMaAAAAAIrlstSFXTSLggMHpet03DkTandA', {
-          action: 'homepage'
-        })
-        .then(function (token) {
-          document.getElementById('captchaResponse').value = token;
-        });
-    });
+    function onSubmit(token) {
+      document.getElementById("contact").submit();
+    }
   </script>
 
 </body>
