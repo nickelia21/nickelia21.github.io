@@ -89,8 +89,9 @@ https://templatemo.com/tm-531-reflux
           <div class="left-image-post">
             <span>
               Hi! My name is Nick and I am a Senior at Northeastern University graduating this May, 2021 with a major in
-              Business Administration (Finance Concentration) and a minor in Computer Science. I am a Graduating Senior
-              at Northeastern University seeking a challenging full-time opportunity as a Business Data Analyst.
+              Business Administration (Finance Concentration) and a minor in Computer Science. I am a currently seeking
+              to use my proficiency in Python, Java, SQL, and Excel VBA along with my business fundamentals in a
+              challenging full-time opportunity as a Data Analyst.
             </span>
           </div>
           <br /><br />
@@ -103,14 +104,6 @@ https://templatemo.com/tm-531-reflux
               child, always analyzing my surroundings. I attended Malvern Preparatory School from 6th through 12th
               grade, where I graduated with a 3.95 GPA (4.0 scale), and passed 7 AP courses. I also competed in tennis,
               where I was a Senior Co-Captain, and played the drums for our Jazz Improvisation and Men's Choral groups.
-            </span>
-          </div>
-          <div class="right-image-post">
-            <span>
-              I am a Finance and Computer Science specialist with professional experience in multiple financial and
-              technological settings. Hard-working, inquisitive, and enthusiastic. I have a strong interest in the
-              quantitative investment field and eager to take on challenging opportunities to further develop and apply
-              my finance background along with my technical programming and data analysis skills.
             </span>
           </div>
         </div>
@@ -374,12 +367,12 @@ https://templatemo.com/tm-531-reflux
           <div class="line-dec"></div>
           <span>Thanks for taking the time to check out my custom website! If you have any comments, questions,
             concerns, or just want to reach out and say hi, please use the form below and I will get back to you
-            A$AP.</span>
+            ASAP.</span>
         </div>
         <div class="row">
           <div class="right-content">
             <div class="container">
-              <form id="contact" action="" method="post">
+              <form id="contact" action="https://getform.io/f/c645354f-b19d-4199-9e4a-0ebed168be73" method="POST">
                 <div class="row">
                   <div class="col-md-6">
                     <fieldset>
@@ -389,7 +382,7 @@ https://templatemo.com/tm-531-reflux
                   </div>
                   <div class="col-md-6">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="Your email..."
+                      <input name="email" type="email" class="form-control" id="email" placeholder="Your email..."
                         required="" />
                     </fieldset>
                   </div>
@@ -401,8 +394,8 @@ https://templatemo.com/tm-531-reflux
                   </div>
                   <div class="col-md-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
-                        required=""></textarea>
+                      <textarea name="message" type="text" rows="6" class="form-control" id="message"
+                        placeholder="Your message..." required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-md-12">
@@ -410,6 +403,11 @@ https://templatemo.com/tm-531-reflux
                       <button type="submit" id="form-submit" class="button">
                         Send Message
                       </button>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
                     </fieldset>
                   </div>
                 </div>
@@ -479,6 +477,20 @@ https://templatemo.com/tm-531-reflux
       checkSection();
     });
   </script>
+
+  <!-- Add reCAPTCHA Library -->
+  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+  <script>
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6LekGJMaAAAAAIrlstSFXTSLggMHpet03DkTandA', {
+          action: 'homepage'
+        })
+        .then(function (token) {
+          document.getElementById('captchaResponse').value = token;
+        });
+    });
+  </script>
+
 </body>
 
 </html>
