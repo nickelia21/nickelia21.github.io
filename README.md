@@ -1,4 +1,4 @@
-# nickelia21.github.io
+# [nickelia21.github.io](https://nickelia21.github.io/)
 
 ## Personal website for educational purposes
 
