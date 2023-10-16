@@ -477,6 +477,7 @@ https://templatemo.com/tm-531-reflux
             ASAP.</span>
         </div>
         <div class="row">
+          <input type="hidden" name="_gotcha" style="display:none !important">
           <div class="right-content">
             <div class="container">
               <form id="contact" action="https://getform.io/f/c645354f-b19d-4199-9e4a-0ebed168be73" method="POST">
@@ -583,6 +584,8 @@ https://templatemo.com/tm-531-reflux
 
   <!-- Add reCAPTCHA Library -->
   <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LekGJMaAAAAAIrlstSFXTSLggMHpet03DkTandA"></script>
+  <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
   <script>
     function onSubmit(token) {
       document.getElementById("contact").submit();
