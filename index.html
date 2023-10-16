@@ -90,6 +90,16 @@
 
   <!-- Add reCAPTCHA Library -->
   <script src="https://www.google.com/recaptcha/api.js?render=6LekGJMaAAAAAIrlstSFXTSLggMHpet03DkTandA"></script>
+
+  <script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LekGJMaAAAAAIrlstSFXTSLggMHpet03DkTandA', {action: 'homepage'})
+        .then(function(token) {
+          document.getElementById('captchaResponse').value = token;
+        });
+      });
+ </script>
+
 </head>
 
 <body>
