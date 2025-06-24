@@ -166,19 +166,25 @@
           <div class="line-dec"></div>
           <br />
           <div class="left-image-post">
-            <span>
+            <span id="bio-text">
               Hi! My name is Nick and I am currently a Senior Business Analyst @ Microsoft Adverting (formerly Xandr).
               Graduating from Northeastern University in May of 2021, I finished with a 3.72 out of 4.0 GPA, 
               majoring in Business Administration (Finance Concentration) alongside a competitive minor in Computer Science. 
-              With over 4 years of professional analytics experience, I began with 2 years in the Finance industry, with an 
+              With over <span id="years-exp"></span> years of professional analytics experience, I began with 2 years in the Finance industry, with an 
               additional 2+ years in AdTech. I have a strong interest in solving unique business problems through creative 
               data-backed solutions. I'm always eager to learn the nitty-gritty of situations and take on challenging 
               opportunities to present insights from complex datasets in a digestible fashion to key stakeholders.
-              I am a currently seeking challenging professional opportunities in both the Finance and AdTech industries to 
+              I am currently seeking challenging professional opportunities in both the Finance and AdTech industries to 
               use my proficiency in Python, SQL, and Business Intelligence Engineering as a Data Analyst to provide useful 
               data-driven insights to key stakeholders.
             </span>
           </div>
+          
+          <script>
+            const currentYear = new Date().getFullYear();
+            const yearsExperience = currentYear - 2019;
+            document.getElementById("years-exp").textContent = yearsExperience;
+          </script>
 
           <!-- LinkedIn Badge 
           <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="nick-elia" data-version="v1">
