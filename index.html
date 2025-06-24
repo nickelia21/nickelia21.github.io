@@ -171,7 +171,7 @@
               Graduating from Northeastern University in May of 2021, I finished with a 3.72 out of 4.0 GPA, 
               majoring in Business Administration (Finance Concentration) alongside a competitive minor in Computer Science. 
               With over <span id="years-exp"></span> years of professional analytics experience, I began with 2 years in the Finance industry, with an 
-              additional 2+ years in AdTech. I have a strong interest in solving unique business problems through creative 
+              additional <span id="years-exp2"></span>+ years in AdTech. I have a strong interest in solving unique business problems through creative 
               data-backed solutions. I'm always eager to learn the nitty-gritty of situations and take on challenging 
               opportunities to present insights from complex datasets in a digestible fashion to key stakeholders.
               I am currently seeking challenging professional opportunities in both the Finance and AdTech industries to 
@@ -182,8 +182,9 @@
           
           <script>
             const currentYear = new Date().getFullYear();
-            const yearsExperience = currentYear - 2019;
+            const yearsExperience = currentYear - 2020;
             document.getElementById("years-exp").textContent = yearsExperience;
+            document.getElementById("years-exp2").textContent = yearsExperience - 2;
           </script>
 
           <!-- LinkedIn Badge 
